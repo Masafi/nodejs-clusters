@@ -22,7 +22,7 @@ This is your client file, there are two main callbacks - on `reroute` and on `ro
 4. `room_manager.js`  
 Name speaks for itself. I didn't add a room exit callbacks, that and other callbacks, I guess, is the only thing you probably need to add  
 
-## How must it work  
+## How should it work  
 Firstly, client connects to the main server. Then, you can register him, give him a token, with which you will do all other things (do not hope for socket.id, etc.)  
 Then, somewhere and somehow, your server decides to move the client to an additional server (for example, the game started)  
 Then, your additional server can drop connection and/or stop executing, and the client will connect to the main server  
